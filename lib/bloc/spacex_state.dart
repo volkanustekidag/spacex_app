@@ -11,12 +11,12 @@ class SpacexInitialState extends SpacexState {
 }
 
 class SpacexSuccesState extends SpacexState {
-  final latest;
+  final Latest latest;
 
-  SpacexSuccesState({this.latest});
+  const SpacexSuccesState({this.latest});
 
   @override
-  List<Object> get props => [];
+  List<Object> get props => [latest];
 }
 
 class SpacexLoadingState extends SpacexState {}
