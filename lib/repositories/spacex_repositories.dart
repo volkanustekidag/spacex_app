@@ -5,9 +5,9 @@ import 'package:spacex_app/models/latest.dart';
 
 const url = 'https://api.spacexdata.com/v4/launches/latest';
 
-class SpacexRepositories {
+class SpacexRepository {
   final http.Client httpClient;
-  SpacexRepositories(this.httpClient);
+  SpacexRepository(this.httpClient);
 
   Future<Latest> fetchLatest() async {
     final response = await this.httpClient.get(Uri.parse(url));
